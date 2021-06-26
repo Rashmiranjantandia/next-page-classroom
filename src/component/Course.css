@@ -1,0 +1,26 @@
+.Course-Table{
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+.table-head tr th{
+    background-color: #171f6d !important;
+    color: #ffff;
+}
+.table-head tr{
+    border-bottom: none;
+}
+.Available-Seats{
+    border: none;
+    background-color: #ffff;
+}
+/* .Btn-Slots{
+    border-radius: 10px;
+    border: none;
+    padding: 10px 40px;
+} */
+
+.Class-Title{
+    font-size: 22px;
+    font-weight: 600;
+    color: #232d71;
+}

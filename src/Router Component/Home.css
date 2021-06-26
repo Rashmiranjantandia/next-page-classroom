@@ -1,0 +1,12 @@
+.Comming-Classroom-Title{
+    color: brown;
+}
+.Comming-Classroom-Table Thead tr th{
+    opacity: 0.6;
+}
+.Comming-Classroom-Table{
+    border-radius: 40px !important;
+}
+.Comming-Classroom-Table tbody tr th{
+    opacity: 0.8;
+}
