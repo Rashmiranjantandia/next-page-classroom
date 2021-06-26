@@ -5,17 +5,15 @@ import "bootstrap/dist/css/bootstrap.css";
 import "font-awesome/css/font-awesome.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Course from './component/Course';
-import Navbar from './component/Navbar';
 import Home from "./Router Component/Home";
 import Python from "./Router Component/Python";
 import NotFound from "./Router Component/NotFound";
+import Logo from "./component/common/Logo";
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      {/* <Course/> */}
-      {/* <Home/> */}
+      <Logo/>
       <Switch>
       <Route path="/Python" component={Python} />
       <Route path="/Course" component={Course} />
