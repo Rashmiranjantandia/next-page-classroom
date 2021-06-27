@@ -8,16 +8,18 @@ import Course from './component/Course';
 import Home from "./Router Component/Home";
 import Python from "./Router Component/Python";
 import NotFound from "./Router Component/NotFound";
-import Logo from "./component/common/Logo";
 import BookedSeats from './Router Component/BookedSeats';
+import HTML from './Router Component/HTML';
 
 function App() {
   return (
     <div className="App">
-      <Logo/>
+      {/* Logo is on Index.js */}
+
       <Switch>
-      <Route path="/Python" component={Python} />
       <Route path="/Course" component={Course} />
+      <Route path="/Python" component={Python} />
+      <Route path="/HTML" component={HTML} />
       <Route path="/Booking" component={BookedSeats} />
       <Route path="/" component={Home} />
       <Route path="/notFound" component={NotFound} />

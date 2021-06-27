@@ -2,6 +2,7 @@ import React from 'react';
 import firebase from 'firebase';
 import firebaseConfig from '../firebase';
 import Navbar from './../component/Navbar';
+import Breadcrumb from './common/Breadcrumbs';
 import {getRandom} from './common/ClaimTime'
 import './Course.css'
 
@@ -27,6 +28,10 @@ function useCourseSchedule(){
         }));
         setCourseSchedule(courseSchedule);
       });
+      console.log('data :');
+      // console.log(courseSchedules[1]["date"]);
+      // console.log(courseSchedules.map((subSourseSchedule) => 
+      // subSourseSchedule.courses.map((course, index) => course.date)));
   }, [db]);
   
   return courseSchedules
@@ -80,9 +85,15 @@ const Course = () => {
 
   return (
     <div>
-      
+      <Breadcrumb 
+            title = {"Home"}
+            path = {"/"}
+            />
+      <Breadcrumb 
+            title = {"Java"}
+            path = {"/Course"}
+            />
       <Navbar/>
-
       <div className="container-fluid">
         <div className="row">
           <div className="float-end col mt-2 mb-1 Class-Title">Java Class Schedule</div>
@@ -112,6 +123,19 @@ const Course = () => {
                       </tr>
                       )}
                     </tbody>
+
+                    {/* <tbody>
+                      {courseSchedules.map((subSourseSchedule) => 
+                      subSourseSchedule.courses.map((course, index) =>
+                      <tr className="row ml-0 mr-0" key={index}>
+                          <td className="col">{course.date}</td>
+                          <td className="col">{course.time}</td>
+                          <td className="col"><button className="Available-Seats">{handleAvail()} seats available</button></td>
+                          <td className="col"><button className={btnClass} onClick={() => handleBook(course)}
+                              type="button">{(avail ===0) ? "Full" : "BookNow"}</button></td>
+                      </tr>
+                      ))}
+                    </tbody> */}
                 </table>
               </div>
             <div className="col-1"></div>

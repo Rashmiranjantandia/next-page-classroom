@@ -31,7 +31,7 @@ const Home = () => {
                 </tr>
                 <tr>
                    
-                        <th scope="row"><NavLink to="/notFound">HTML</NavLink></th>
+                        <th scope="row"><NavLink to="/HTML">HTML</NavLink></th>
                         <td>Every Friday and Saturday</td>
                         <td>9am</td>
                 </tr>

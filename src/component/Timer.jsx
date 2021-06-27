@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect } from "react-router-dom";
 import './Timer.css'
 import {getRandom} from './common/ClaimTime'
 class Timer extends Component {
@@ -17,6 +18,7 @@ class Timer extends Component {
                   <div className="col-2"></div>
                     <div className="col-9">
                         <h2 className="Claim-Title float-start">Claim Your Free Trial Class</h2>
+                        {/* <h5>{this.props.match.path}</h5> */}
                     </div>
                     <div className="col"></div>
                     <div className="row">
@@ -38,7 +40,7 @@ class Timer extends Component {
         })
          this.myInterval = setInterval(() => {
             this.setState(prevState => ({
-                 count: (this.state.count <=0 ? window.location.reload(): prevState.count - 1)
+                 count: (this.state.count <=0 ? <Redirect to="/" />: prevState.count - 1)
             }))
         }, 1000)
     }

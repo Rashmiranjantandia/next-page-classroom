@@ -1,6 +1,14 @@
-.Logo-Image{
-    z-index: 200;
-}
-/* .Logo-Container{
+/* .Logo-Image{
     z-index: 200;
 } */
+.Logo-Container{
+    /* display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-right: -200px; */
+    /* float: right; */
+    /* justify-content: right; */
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }

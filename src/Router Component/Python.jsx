@@ -1,11 +1,23 @@
 import React from 'react';
-const Home = () => {
+import Navbar from './../component/Navbar';
+import Breadcrumb from '.././component/common/Breadcrumbs';
+const Python = () => {
     return ( 
         <>
-        <h1>Python Page</h1>
-         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis nihil molestiae aliquid numquam velit explicabo commodi nam sint aperiam ex amet deleniti temporibus, eos doloribus quam alias. Hic, magnam voluptatem?</div>
+      <Breadcrumb 
+            title = {"Home"}
+            path = {"/"}
+            />
+      <Breadcrumb 
+            title = {"Python"}
+            path = {"/Python"}
+            />
+      <Navbar/>
+        <h1  className="mt-5">Python Page</h1>
+         <div>Here is a Python Demo page</div>
+         <div>Just need to fetch the data from firebase</div>
         </>
      );
 }
  
-export default Home;
+export default Python;
