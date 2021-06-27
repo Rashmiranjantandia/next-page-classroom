@@ -2,7 +2,7 @@ import React from 'react';
 import './Navbar.css'
 import Timer from "./Timer";
 import Cart from "./Cart";
-import BreadcrumbHome from './common/Breadcrumbs';
+// import BreadcrumbHome from './common/Breadcrumbs';
 const NavBar = () => {
     return ( 
         <div className="container-fluid">

@@ -21,7 +21,6 @@ class ButtonChange extends Component {
                 </div>
            )
        }
-    }
 }
  
 export default ButtonChange;
