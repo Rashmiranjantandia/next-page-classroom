@@ -85,7 +85,7 @@ const Course = () => {
 
       <div className="container-fluid">
         <div className="row">
-          <div className="float-end col mt-4 mb-1 Class-Title">Java Class Schedule</div>
+          <div className="float-end col mt-2 mb-1 Class-Title">Java Class Schedule</div>
           <div className="col-8"></div>
         </div>
         <div className="row">

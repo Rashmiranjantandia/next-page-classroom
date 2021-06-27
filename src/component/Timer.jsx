@@ -14,9 +14,9 @@ class Timer extends Component {
         return ( 
             <div className="container-fluid">
                 <div className="row">
-                  <div className="col-1"></div>
-                    <div className="col-10">
-                        <h2 className="Claim-Title">Claim Your Free Trial Class</h2>
+                  <div className="col-2"></div>
+                    <div className="col-9">
+                        <h2 className="Claim-Title float-start">Claim Your Free Trial Class</h2>
                     </div>
                     <div className="col"></div>
                     <div className="row">
